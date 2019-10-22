@@ -1,0 +1,58 @@
+.price 
+    background-color: #e1e4e8
+.price-container
+    display: flex
+    justify-content: center
+    margin-top: 20px
+.price-block
+    margin: 0 70px
+    &__price-container
+        display: flex
+        justify-content: center
+    &__price
+        transform: skewX(-20deg)
+        background-image: linear-gradient(45deg, #098cfe, #02172A)
+        color: white
+        width: 150px
+        height: 50px
+        font-size: 20px
+        font-weight: 600
+        text-align: center
+        line-height: 48px
+        div
+            transform: skewX(20deg)
+    &__name
+        text-align: center
+        color: #033d6f
+        font-size: 19px
+        font-weight: 600
+    &__line-container
+        display: flex
+        justify-content: center
+    &__line
+        background-color: #005eb0
+        height: 3px
+        width: 170px
+    &__list
+        margin-top: 25px
+        list-style-type: none
+        li 
+            position: relative
+            font-size: 17px
+            font-weight: 300
+            line-height: 24px
+            margin-bottom: 10px
+            &.bold
+                font-weight: bold
+            &:before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 21px
+                background: url("../icons/checked.png") center center/cover no-repeat
+            &.unchecked:before        
+                background: url("../icons/unchecked.png") center center/cover no-repeat
+        
