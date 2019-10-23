@@ -37,8 +37,9 @@
         display: flex
         justify-content: center
     &__list
-        margin-top: 25px
-        padding-left: 20px
+        height: 190px
+        margin: 25px 0 0 0
+        padding-left: 30px
         list-style-type: none
         li 
             position: relative
@@ -59,11 +60,25 @@
                 background: url("../icons/checked.png") center center/cover no-repeat
             &.unchecked:before        
                 background: url("../icons/unchecked.png") center center/cover no-repeat
-
-@media (max-width: 980px)   
+    &__button-container
+        display: flex
+        justify-content: center
+        margin-bottom: 30px
+        button
+            width: 90px
+            height: 35px
+            color: white
+            padding: 0 5px
+            border-radius: 10px
+            border: none
+            background-color: #329ffe
+@media (max-width: 1194px)   
     .price-block
-        margin: 0 30px
-@media (max-width: 664px)   
+        margin: 0 40px
+@media (max-width: 1018px)   
+    .price-block
+        margin: 0 20px
+@media (max-width: 891px)   
     .price-block
         margin: 0 15px
         &__price
@@ -76,6 +91,10 @@
         &__list
             li
                 font-size: 15px
+@media (max-width: 786px)
+    .price-block
+        &__list
+            height: 245px
 @media (max-width: 580px)
     .price-block
         &__list
@@ -85,17 +104,28 @@
                 &:before
                     width: 16px
                     height: 16px
-@media (max-width: 510px)
+@media (max-width: 555px)
     .price
         padding-bottom: 0
     .price-container
         flex-direction: column
     .price-block
-        margin-bottom: 15px
+        width: 290px
+        height: 300px
+        border: 2px solid gray
+        border-radius: 20px
+        padding: 10px
+        margin-bottom: 20px
+        margin-left: calc(50% - 145px)
         &__list
+            height: auto
             li
                 font-size: 15px
                 &:before
                     width: 20px
                     height: 20px
+        &__button-container            
+            margin-bottom: 50px
+        &:last-child
+            height: 350px
 
