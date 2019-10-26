@@ -12,6 +12,25 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="menu">
+                    <li class="menu_item"><a href="#what" class="menu_link">О Курсе</a></li>
+                    <li class="menu_item"><a href="#programm" class="menu_link">Программа</a></li>
+                    <li class="menu_item"><a href="#teacher" class="menu_link">Преподаватель</a></li>
+                    <li class="menu_item"><a href="#price" class="menu_link">Стоимость</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Купить</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
     <section class="promo">
         <div class="promo_logo">
             <span class="promo_logo_fire_fans">FIRE FANS </span>
@@ -38,7 +57,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="what">
         <h2 class="about_header">О чем курс</h2>
         <div class="row">
             <div class="col-xl-7 offset-xl-1 col-7 about_text">
@@ -100,7 +119,7 @@
         </div>
     </section>
 
-    <section class="programm">
+    <section class="programm" id="programm">
         <h2 class="programm_header">Программа курса</h2>
         <div class="row programm_main">
             <div class="col-md-3 col-4">
@@ -178,7 +197,7 @@
         </div>
     </section>
 
-    <section class="teacher">
+    <section class="teacher" id="teacher">
         <h2 class="teacher_header">О Преподавателе</h2>
         <div class="row teacher_main">
             <div class="col-xl-5 offset-xl-1 col-md-6 col-12 teacher_text">
@@ -196,7 +215,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <h2 class="price_header">Стоимость обучения</h2>
         <div class="price-container">
             <div class="price-block">
@@ -288,6 +307,8 @@
             </div>
         </div>
     </section>
+
+    <script src="js/script.js"></script>
     
 </body>
 </html>
