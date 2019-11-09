@@ -114,7 +114,7 @@ nav
         background-color: #098cfe
 .contacts
     color: #ffffff
-    padding: 50px 0 10px 60%
+    padding: 50px 0 10px 10%
     min-height: 500px
     background: url("../img/footer_bg.jpg") center center/cover no-repeat
     &__descr
@@ -221,7 +221,7 @@ nav
         margin: 0 20px
 @media (max-width: 891px)   
     .contacts
-        padding-left: 50%
+        padding-left: 5%
     .price-block
         margin: 0 15px
         &__price
@@ -285,6 +285,7 @@ nav
 					transform: translateY(3px) rotate(45deg)
 @media (max-width: 724px)
     .contacts
+        background-image: url("../img/footer_bg_cut_.jpg")
         display: flex
         flex-direction: column
         justify-content: center
@@ -323,6 +324,29 @@ nav
             margin-bottom: 50px
         &:last-child
             height: 350px
+@media (max-width: 453px)
+    .contacts
+        background-image: url("../img/footer_bg_cut.jpg")
+    .modal 
+        width: 80%
+        min-height: 300px
+        padding-left: 10%
+        &__close 
+            right: -30px
+        .feed-form 
+            margin-top: 20px
+            width: 100%
+            input 
+                height: 30px
+                font-size: 12px
+                padding-right: 0px
+                &:nth-child(3) 
+                    margin-bottom: 20px
+            .button
+                height: 40px
+                font-size: 12px
+        &_mini 
+            min-height: 140px
 @media (max-width: 375px)
     .contacts__descr
         width: 250px

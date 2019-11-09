@@ -22,6 +22,10 @@ $(document).ready(function(){
         $('.overlay, #thanks, #order').fadeOut('slow');
     });
 
+    $('.button_contact').on('click', function() {
+        $('.overlay, #thanks').fadeIn('slow');
+    });
+
     $('.button_mini').each(function(i) {
         $(this).on('click', function() {
             $('#order .modal__descr').text($('.price-block__name').eq(i).text());
