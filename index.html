@@ -20,8 +20,7 @@
                     <li class="menu_item"><a href="#programm" class="menu_link">Программа</a></li>
                     <li class="menu_item"><a href="#teacher" class="menu_link">Преподаватель</a></li>
                     <li class="menu_item"><a href="#price" class="menu_link">Стоимость</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Купить</a></li>
+                    <li class="menu_item"><a href="#contacts" class="menu_link">Контакты</a></li>
                 </ul>
             </div>
             <div class="hamburger">
@@ -243,7 +242,7 @@
                     </ul>
                 </div>
                 <div class="price-block__button-container">
-                    <button>Купить</button>
+                    <button class="button button_mini">Купить</button>
                 </div>
             </div>
             <div class="price-block">
@@ -271,7 +270,7 @@
                     </ul>
                 </div>
                 <div class="price-block__button-container">
-                    <button>Купить</button>
+                    <button class="button button_mini">Купить</button>
                 </div>
             </div>
             <div class="price-block">
@@ -302,12 +301,60 @@
                     </ul>
                 </div>
                 <div class="price-block__button-container">
-                    <button>Купить</button>
+                    <button class="button button_mini">Купить</button>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="contacts" id="contacts">
+        <div class="contacts__descr">
+            Отправьте сообщение<br> 
+            по интересующим вас вопросам:
+        </div>
+        <div class="contacts-container">
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text"> 
+                <input name="email" required placeholder="Ваш E-mail" type="email"> 
+                <textarea name="message"placeholder="Введите сообщение"></textarea>
+
+                <button class="button button_contact">отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__social">
+            <a href="#" class="footer__social-item"><img src="icons/vk.png" alt="vk"></a>
+            <a href="#" class="footer__social-item"><img src="icons/instagram.png" alt="instagram"></a>
+            <a href="#" class="footer__social-item"><img src="icons/youtube_alt.png" alt="youtube"></a>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пакет "Базовый"</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text"> 
+                <input name="phone" required placeholder="Ваш телефон"> 
+                <input name="email" required placeholder="Ваш E-mail" type="email"> 
+
+                <button class="button button_submit">купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Мы свяжемся с вами 
+                в ближайшее время!</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/script.js"></script>
     
 </body>

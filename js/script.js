@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+/*  window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu_item'),
     hamburger = document.querySelector('.hamburger');
@@ -14,4 +14,23 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('menu_active');
         })
     })
+}) 
+ */
+$(document).ready(function(){
+    // Modal
+    $('.modal__close').on('click', function() {
+        $('.overlay, #thanks, #order').fadeOut('slow');
+    });
+
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.price-block__name').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        })
+    });
+
+    $('.button_submit').on('click', function() {
+        $('#order').fadeOut('slow');
+        $('#thanks').fadeIn('slow');
+    });
 })
